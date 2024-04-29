@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@font-face{
+    font-family: 'MTV';
+    src:url(../fonts/MTV.woff),
+        url(../fonts/MTV.eot);
+    font-weight:normal;
+    font-style:normal;
+}
+
+*{
+    list-style: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.MTVfont{
+    font-family: "MTV", sans-serif;
+}
+
+
+/* 
+    .:: NAVBAR ::.
+ */
+
+    nav.navbar{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) , transparent);
+
+        backdrop-filter: blur(5px);
+
+        position: absolute;
+        right: 0;
+        left: 0;
+
+        z-index: 999;
+    }
+
+    nav.navbar a.navbar-brand img{
+        height: 50px;
+
+        filter: saturate(0%);
+        opacity: 100%;
+
+        transition: all 200ms;
+    }
+
+        nav.navbar a.navbar-brand img:hover{
+            transform: scale(1.15);
+            filter: saturate(100%);
+        }
+        nav.navbar a.navbar-brand img:active{
+            transform: scale(1.05);
+            opacity: 80%;
+        }
+
+    nav.navbar a.nav-link{
+        color:#DEDEDE;
+        font-size: .9rem;
+        font-weight: 700;
+        text-shadow:
+        1px 1px 0px black,
+        -1px 1px 0px black,
+        1px -1px 0px black,
+        -1px -1px 0px black,
+        0px 0px 0px #9B5DE6;
+
+        opacity: 100%;
+
+        transition: all 200ms;
+    }
+
+        nav.navbar a.nav-link:hover{
+            color:#FDE441;
+            font-weight: 800;
+            text-shadow:
+            1px 1px 0px black,
+            -1px 1px 0px black,
+            1px -1px 0px black,
+            -1px -1px 0px black,
+            3px 0px 0px #9B5DE6;
+
+            transform: scale(1.15);
+        }
+
+            nav.navbar a.nav-link:hover::after{
+                content: 'Tv';
+                
+                position: absolute;
+                right: 3px;
+                top: .9rem;
+
+                color: #F15BB5;
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                font-size: .6rem;
+                text-shadow: 
+                1px 1px 0px black,
+                -1px 1px 0px black,
+                1px -1px 0px black,
+                -1px -1px 0px black;
+
+                transform: rotate(-10deg);
+            }
+        
+        nav.navbar a.nav-link:active{
+            transform: scale(1.05);
+            opacity: 80%;
+        }
+
+/* 
+    .:: FOOTER ::.
+*/
+
+    footer.YLPfooter{
+        background-color: #0C0B03;
+        padding: 60px 0;
+
+        color: white;
+    }
+
+        footer.YLPfooter .FOTinfo-title{
+            margin-bottom: 20px;
+            
+            font-weight: 500;
+        }
+
+            footer.YLPfooter .STUinfo .FOTinfo-title{
+                font-size: 1.3rem;
+            }
+
+            footer.YLPfooter .YLinfo .FOTinfo-title{
+                font-size: 1.5rem;
+            }
+
+        footer.YLPfooter .FOTinfo-text{
+            margin-bottom: 5px;
+
+            font-size: .9rem;
+            font-weight: 300;
+        }
+
+        footer.YLPfooter .FOTinfo-yList{
+            display: flex;
+            gap: 25px;
+        }
+
+            footer.YLPfooter .FOTinfo-yList .FOTinfo-text{
+                font-size: 1rem;
+            }
+
+        footer.YLPfooter a{
+            color: white;
+            display: inline-block;
+
+            transition: all 200ms , color 150ms;
+        }
+
+            footer.YLPfooter a:hover{
+                color: #F15BB5;
+                text-decoration: underline;
+                
+                transform: scale(1.05);
+            }
+
+            footer.YLPfooter a:active{
+                color: #9B5DE6;
+                
+                transform: scale(.95);
+            }
+
+        footer.YLPfooter .bi{
+            font-style: normal;
+        }
+
+/* 
+    .:: ALGUNS PADRÕES ::.
+*/
+
+        section.allScreen{
+            height: 100vh;
+            max-height: 1000px;
+        }

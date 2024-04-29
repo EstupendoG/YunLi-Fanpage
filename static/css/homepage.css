@@ -1,0 +1,27 @@
+
+    section.allScreen#firstSection{
+        background-image: url(../img/YL-background1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        flex-direction: column;
+    }
+    
+        section.allScreen#firstSection .pageTitles{
+            color: white;
+        }
+        
+        section.allScreen#firstSection h1.pageTitles{
+            margin-bottom: 0;
+            
+            font-family: "MTV", sans-serif;
+            font-size: 4rem;
+            text-shadow: 
+            -10px -5px 25px rgba(0, 0, 255, 0.5),
+            5px 10px 25px rgba(255, 0, 0, 0.5);
+        }
+    
+        section.allScreen#firstSection h2.pageTitles{
+            font-size: 1.5rem;
+        }
