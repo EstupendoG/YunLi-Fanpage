@@ -1,27 +1,66 @@
 
-    section.allScreen#firstSection{
+    section.allScreen#header{
         background-image: url(../img/YL-background1.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
 
+        box-shadow: 
+        0px 1px 10px rgba(0, 0, 0, 0.5),
+        inset 0 0 200px rgba(0, 0, 0, 0.75);
+
         flex-direction: column;
     }
     
-        section.allScreen#firstSection .pageTitles{
-            color: white;
+        section.allScreen#header .pageTitles{
+            color: var(--branco);
+            font-variant: small-caps;
         }
         
-        section.allScreen#firstSection h1.pageTitles{
-            margin-bottom: 0;
+            section.allScreen#header h1.pageTitles{
+                margin-bottom: 0;
+                
+                font-size: 4.5rem;
+                text-shadow: 
+                -10px -5px 25px rgba(0, 0, 255, 0.5),
+                5px 10px 25px rgba(255, 0, 0, 0.5);
+            }
+
+            section.allScreen#header h2.pageTitles{
+                font-size: 1.3rem;
+            }
+
+
+
+    section.allScreen#schiavon{
+        background-image: linear-gradient(195deg, #4F7582 , #60808F , #6D899E);
+        background-image: linear-gradient(var(--YLamarelo) , var(--YLamarelo));
+        background-attachment: fixed;
+
+        height: 90vh;
+        max-height: 800px;
+
+        box-shadow: 
+        inset 0 5px 10px rgba(0, 0, 0, 0.3),
+        inset 0 -5px 10px rgba(0, 0, 0, 0.3);
+
+        position: relative;
+    }
+
+        section.allScreen#schiavon img.schiavon-bodyPhoto{
+            width: 59%;
             
-            font-family: "MTV", sans-serif;
-            font-size: 4rem;
-            text-shadow: 
-            -10px -5px 25px rgba(0, 0, 255, 0.5),
-            5px 10px 25px rgba(255, 0, 0, 0.5);
+            position: absolute;
+            bottom: 0px;
+            left: -30px;
+
+            filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
         }
-    
-        section.allScreen#firstSection h2.pageTitles{
-            font-size: 1.5rem;
+
+        section.allScreen#schiavon .section-title{
+            color: var(--branco);
+        }
+
+        section.allScreen#schiavon .section-text{
+            color: var(--branco);
         }

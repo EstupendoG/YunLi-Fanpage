@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @font-face{
@@ -8,9 +9,22 @@
     font-style:normal;
 }
 
+:root{
+    --preto: #0C0B03;
+    --branco: #FFFFFA;
+
+    --YLroxo: #9B5DE6;
+    --YLamarelo: #FDE441;
+    --YLrosa:#F15BB5;
+}
+
 *{
     list-style: none;
     font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body{
+    background-color: var(--branco);
 }
 
 a{
@@ -19,6 +33,10 @@ a{
 
 .MTVfont{
     font-family: "MTV", sans-serif;
+}
+
+.TITLEfont{
+    font-family: "EB Garamond", serif;
 }
 
 
@@ -57,30 +75,32 @@ a{
         }
 
     nav.navbar a.nav-link{
-        color:#DEDEDE;
+        color:var(--branco);
         font-size: .9rem;
-        font-weight: 700;
+        font-weight: 600;
+        font-variant: small-caps;
         text-shadow:
         1px 1px 0px black,
         -1px 1px 0px black,
         1px -1px 0px black,
         -1px -1px 0px black,
-        0px 0px 0px #9B5DE6;
+        0px 0px 0px var(--YLroxo);
 
         opacity: 100%;
+
 
         transition: all 200ms;
     }
 
         nav.navbar a.nav-link:hover{
-            color:#FDE441;
-            font-weight: 800;
+            color: var(--YLamarelo);
+            font-weight: 700;
             text-shadow:
             1px 1px 0px black,
             -1px 1px 0px black,
             1px -1px 0px black,
             -1px -1px 0px black,
-            3px 0px 0px #9B5DE6;
+            3px 0px 0px var(--YLroxo);
 
             transform: scale(1.15);
         }
@@ -90,9 +110,9 @@ a{
                 
                 position: absolute;
                 right: 3px;
-                top: .9rem;
+                top: 1.3rem;
 
-                color: #F15BB5;
+                color: var(--YLrosa);
                 font-family: "Comic Sans MS", "Comic Sans", cursive;
                 font-size: .6rem;
                 text-shadow: 
@@ -114,10 +134,10 @@ a{
 */
 
     footer.YLPfooter{
-        background-color: #0C0B03;
+        background-color: var(--preto);
         padding: 60px 0;
 
-        color: white;
+        color: var(--branco);
     }
 
         footer.YLPfooter .FOTinfo-title{
@@ -151,21 +171,21 @@ a{
             }
 
         footer.YLPfooter a{
-            color: white;
+            color: var(--branco);
             display: inline-block;
 
             transition: all 200ms , color 150ms;
         }
 
             footer.YLPfooter a:hover{
-                color: #F15BB5;
+                color: var(--YLrosa);
                 text-decoration: underline;
                 
                 transform: scale(1.05);
             }
 
             footer.YLPfooter a:active{
-                color: #9B5DE6;
+                color: var(--YLroxo);
                 
                 transform: scale(.95);
             }
@@ -180,5 +200,31 @@ a{
 
         section.allScreen{
             height: 100vh;
-            max-height: 1000px;
+            max-height: 900px;
+            padding: 100px;
+        }
+
+        section.allScreen .section-title{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            font-variant: small-caps;
+
+            color: var(--preto);
+            font-size: 3.5rem;
+            font-weight: 500;
+
+        }
+
+            section.allScreen .section-title::before{
+                content: '#';
+                font-weight: 600;
+                font-size: 3rem;
+            }
+
+        section.allScreen .section-text{
+            margin-bottom: 30px;
+
+            color: var(--preto);
+            font-size: 1.1rem;
+            font-weight: 400;
         }

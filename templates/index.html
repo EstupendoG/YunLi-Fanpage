@@ -1,33 +1,117 @@
 {% extends 'base.html' %}
 
-<<<<<<< HEAD
 {% block pageCss %} 
 <link rel="stylesheet" href="{{url_for('static' , filename='css/homepage.css')}}">
 {% endblock %}
-=======
-{% block pageCss %} {% endblock %}
->>>>>>> b6604abfe3a85afa7c5fafc7a2dba4a53a740d3f
 
 {% block pageTitle %} Homepage {% endblock %}
 
 {% block pageContent %} 
 
-<<<<<<< HEAD
-    <section class="allScreen container-xxl d-flex justify-content-center align-items-center" id="firstSection">
-            <h1 class="pageTitles">
-                yunli
+    <section class="allScreen d-flex justify-content-center align-items-center" id="header">
+            <h1 class="pageTitles TITLEfont">
+                YUNLI
             </h1>
             <h2 class="pageTitles">
-                Lorem ipsum dolor sit amet.
+                E as três faces de uma só Arte
             </h2>
+    </section>
+
+    <section class="allScreen container-xxl" id="introduction">
+        <h3 class="section-title TITLEfont">
+            Introdução
+        </h3>
+
+        <p class="section-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maxime vero a adipisci beatae excepturi ipsum, placeat enim, odio eligendi nesciunt ut repudiandae atque alias minus voluptatem! Ratione, voluptatum maiores.
+        </p>
+
+        <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatem illum ratione distinctio? Totam commodi consequatur repudiandae sequi vero. Consectetur aliquid reiciendis vero aperiam, consequuntur accusantium impedit mollitia alias obcaecati unde eaque nobis debitis quo explicabo! Totam nihil quam aspernatur?
+        </p>
+
+        <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tempore! Iure quod, aspernatur voluptatibus sunt dolore praesentium nemo enim dolores quibusdam repudiandae sint ad nam rerum quis facilis dicta reiciendis accusamus! Maxime veniam atque dignissimos tempora aliquid vel iure adipisci expedita qui. Alias ratione odit provident consectetur magni quo quisquam!
+        </p>
+    </section>
+
+    <section class="allScreen container-xxl" id="schiavon">
+        <div class="row">
+            <div class="col">
+                <img class="schiavon-bodyPhoto" src="{{url_for('static' , filename='img/YL-body0.png')}}" alt="">
+            </div>
+
+            <div class="col-7">
+                <h3 class="section-title TITLEfont">
+                    Quem é Victor?
+                </h3>
+
+                <p class="section-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto corporis quae deserunt quisquam ut nesciunt magni velit nostrum ducimus. Ipsum amet fugiat nam, rem natus error cupiditate necessitatibus eveniet.
+                </p>
+
+                <p class="section-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat ratione unde quaerat iure debitis voluptates animi nobis eum, ipsam facilis corporis quas aperiam reiciendis necessitatibus eaque velit non accusamus dignissimos sed, laborum doloremque nulla error repellendus? Magni neque iure maiores delectus quidem!
+                </p>
+            </div>
         </div>
     </section>
 
-    <section class="allScreen container-md" id="secondSection">
-        ´
-    </section>
-=======
+    <section class="allScreen container-xxl">
+        <h3 class="section-title TITLEfont">
+            Alter Egos
+        </h3>
+        
+        <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto corporis quae deserunt quisquam ut nesciunt magni velit nostrum ducimus. Ipsum amet fugiat nam, rem natus error cupiditate necessitatibus eveniet.
+        </p>
     
->>>>>>> b6604abfe3a85afa7c5fafc7a2dba4a53a740d3f
+        <div class="row">
+
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title TITLEfont">MC VV</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                        
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title TITLEfont">YunLi</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                        
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title TITLEfont">TokyoMarui</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                        
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
 {% endblock %}
