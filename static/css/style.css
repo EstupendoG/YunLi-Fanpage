@@ -35,8 +35,22 @@ a{
     font-family: "MTV", sans-serif;
 }
 
-.TITLEfont{
+.TITLEpage{
+    margin-bottom: 20px;
+
+    color: var(--preto);
+    font-size: 3.3rem;
+    font-weight: 400;
     font-family: "EB Garamond", serif;
+    letter-spacing: -1px;
+    font-variant: small-caps;    
+}
+
+.TXTpage{
+    color: var(--preto);
+    font-size: 1.075rem;
+    font-weight: 300;
+    line-height: 27px;
 }
 
 
@@ -62,6 +76,8 @@ a{
         filter: saturate(0%);
         opacity: 100%;
 
+        user-select: none;
+
         transition: all 200ms;
     }
 
@@ -74,11 +90,20 @@ a{
             opacity: 80%;
         }
 
+    .navbar-toggler{
+        border: 0;
+        outline: 0;
+    }
+
+        .navbar-toggler:focus{
+            box-shadow: 0 0 0;
+        }
+
     nav.navbar a.nav-link{
         color:var(--branco);
-        font-size: .9rem;
+        font-size: .85rem;
         font-weight: 600;
-        font-variant: small-caps;
+        text-transform: uppercase;
         text-shadow:
         1px 1px 0px black,
         -1px 1px 0px black,
@@ -110,11 +135,12 @@ a{
                 
                 position: absolute;
                 right: 3px;
-                top: 1.3rem;
-
+                top: 1rem;
+                
                 color: var(--YLrosa);
                 font-family: "Comic Sans MS", "Comic Sans", cursive;
-                font-size: .6rem;
+                font-size: .65rem;
+                text-transform: capitalize;
                 text-shadow: 
                 1px 1px 0px black,
                 -1px 1px 0px black,
@@ -138,6 +164,8 @@ a{
         padding: 60px 0;
 
         color: var(--branco);
+
+        z-index: 999;
     }
 
         footer.YLPfooter .FOTinfo-title{
@@ -185,7 +213,7 @@ a{
             }
 
             footer.YLPfooter a:active{
-                color: var(--YLroxo);
+                color: var(--YLamarelo);
                 
                 transform: scale(.95);
             }
@@ -198,33 +226,158 @@ a{
     .:: ALGUNS PADRÕES ::.
 */
 
-        section.allScreen{
-            height: 100vh;
-            max-height: 900px;
-            padding: 100px;
-        }
+    header.pageHeader{
+        height: 100vh;
+        max-height: 900px;
+    }
 
-        section.allScreen .section-title{
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+        header .headerTitle{
+            color: var(--branco);
             font-variant: small-caps;
+        }
+    
+    
+    section.contentSection{
+        padding: 75px 150px 100px;
+    }
+        
 
-            color: var(--preto);
-            font-size: 3.5rem;
-            font-weight: 500;
 
+
+    
+
+@media (max-width: 770px){
+    
+    header.pageHeader{
+        height: 90vh;
+    }
+    
+    .TITLEpage{
+        margin-bottom: 15px;
+
+        font-size: 2.7rem;
+        letter-spacing: -.5px;
+    }
+
+    .TXTpage{
+        font-size: .93rem;
+        line-height: 25px;
+    }
+
+
+    /* 
+        .:: NAVBAR ::.
+    */
+        nav.navbar a.navbar-brand img{
+            height: 40px;
         }
 
-            section.allScreen .section-title::before{
-                content: '#';
+
+        nav.navbar a.nav-link{
+            font-size: .8rem;
+            font-weight: 500;
+        }
+
+            nav.navbar a.nav-link:hover{
                 font-weight: 600;
-                font-size: 3rem;
+                
+                transform: scale(1.01);
             }
 
-        section.allScreen .section-text{
-            margin-bottom: 30px;
+                nav.navbar a.nav-link:hover::after{
+                    content: '';
+                }
 
-            color: var(--preto);
-            font-size: 1.1rem;
-            font-weight: 400;
+                
+        nav.navbar a.nav-link:active{
+            transform: scale(1.01);
         }
+            
+    /* 
+        .:: FOOTER ::.
+    */
+
+        footer.YLPfooter{
+            padding: 50px 10px;
+        }
+
+            footer.YLPfooter .FOTinfo-title{
+                margin-bottom: 10px;
+
+                font-size: 1.15rem;
+            }
+
+            footer.YLPfooter .FOTinfo-text{
+                font-size: .8rem;
+            }
+
+            footer.YLPfooter .FOTinfo-yList{
+                gap: 15px;
+            }
+
+                footer.YLPfooter .FOTinfo-yList .FOTinfo-text{
+                    font-size: .8rem;
+                }
+
+    /* 
+        .:: ALGUNS PADRÕES ::.
+    */
+
+        section.contentSection{
+            padding: 75px 50px 100px;
+        }
+            
+}
+
+@media (max-width: 550px){
+    
+    .TITLEpage{
+        margin-bottom: 15px;
+
+        font-size: 2.1rem;
+    }
+
+    .TXTpage{
+        font-size: .8rem;
+        line-height: 23px;
+    }
+
+    /* 
+        .:: FOOTER ::.
+    */
+
+        footer.YLPfooter{
+            padding: 40px 10px;
+        }
+
+            footer.YLPfooter .FOTinfo-title{
+                font-size: 1.15rem;
+            }
+
+            footer.YLPfooter .FOTinfo-text{
+                font-size: .78rem;
+                font-weight: 300;
+            }
+
+            footer.YLPfooter .FOTinfo-yList{
+                margin-top: 10px;
+                gap: 15px;
+            }
+
+                footer.YLPfooter .FOTinfo-yList .FOTinfo-text{
+                    font-size: .7rem;
+                }
+
+    /* 
+        .:: ALGUNS PADRÕES ::.
+    */
+    
+        header.pageHeader{
+            height: 80vh;
+        }
+        
+        section.contentSection{
+            padding: 30px 25px ;
+        }
+            
+}

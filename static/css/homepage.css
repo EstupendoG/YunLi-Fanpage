@@ -1,66 +1,317 @@
-
-    section.allScreen#header{
+    header#homepageHeader{
         background-image: url(../img/YL-background1.png);
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
-        background-position: center center;
 
-        box-shadow: 
-        0px 1px 10px rgba(0, 0, 0, 0.5),
-        inset 0 0 200px rgba(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: color;
+
+        box-shadow: inset 0 0 250px rgba(0, 0, 0, 0.7);
 
         flex-direction: column;
     }
-    
-        section.allScreen#header .pageTitles{
-            color: var(--branco);
-            font-variant: small-caps;
+
+        header#homepageHeader h1{
+            margin-bottom: -10px;
+            
+            font-size: 6rem;
+            font-weight: 500;
+            text-shadow: 
+            3px 5px 25px rgba(255, 0, 0, 0.5),
+            -5px -3px 25px rgba(0, 0, 255, 0.5);
         }
+
+        header#homepageHeader h2{
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+
+    table.table-borderless{
+        max-width: 800px;
+        margin: 50px auto;
+    }   
+
+
+        .table-borderless tbody tr{
+            transition: all 150ms ease-in-out;            
+        }   
+
+        .table-borderless tbody tr:hover{
+            cursor: pointer;
+            
+            transform: scale(1.01);
+        }   
+
+        .table-borderless tr:hover td:nth-child(2n){
+            color: var(--YLrosa);
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        .table-borderless tr:active td:nth-child(2n){
+            color: var(--YLamarelo);
+        }
+
+
         
-            section.allScreen#header h1.pageTitles{
-                margin-bottom: 0;
-                
-                font-size: 4.5rem;
-                text-shadow: 
-                -10px -5px 25px rgba(0, 0, 255, 0.5),
-                5px 10px 25px rgba(255, 0, 0, 0.5);
-            }
-
-            section.allScreen#header h2.pageTitles{
-                font-size: 1.3rem;
-            }
-
-
-
-    section.allScreen#schiavon{
-        background-image: linear-gradient(195deg, #4F7582 , #60808F , #6D899E);
-        background-image: linear-gradient(var(--YLamarelo) , var(--YLamarelo));
+    section#schiavon{
+        background-image: linear-gradient(185deg, #4B7279 , #5E7E89 , #718DA0 , #8A97B7 110%, #919EC0 110%);
         background-attachment: fixed;
 
-        height: 90vh;
-        max-height: 800px;
-
         box-shadow: 
-        inset 0 5px 10px rgba(0, 0, 0, 0.3),
-        inset 0 -5px 10px rgba(0, 0, 0, 0.3);
+        inset 0  10px 20px rgba(0, 0, 0, 0.1),
+        inset 0 -10px 20px rgba(0, 0, 0, 0.1);
 
         position: relative;
     }
 
-        section.allScreen#schiavon img.schiavon-bodyPhoto{
-            width: 59%;
-            
+        #schiavon .schiavon-image img{
+            max-width: 100vw;
+            height: 111%;
+            margin-left: -3%;
+
             position: absolute;
-            bottom: 0px;
-            left: -30px;
+            bottom: 0;
 
-            filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.5));
+            filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.4));
+
+            z-index: 0;
         }
 
-        section.allScreen#schiavon .section-title{
+        #schiavon .schiavon-text{
+            padding: 50px 150px 50px 0;
+
+            z-index: 1;
+        }
+
+        #schiavon .schiavon-text *{
             color: var(--branco);
         }
 
-        section.allScreen#schiavon .section-text{
+
+
+        div.cardContainer{
+            margin: 50px auto;
+        }
+
+            .cardContainer .col-lg-4{
+                padding: 5px;
+            }
+
+            .cardContainer .card{
+                background-color: transparent;
+                
+                box-shadow: 1px 1px 5px rgba(0, 0, 0 , 0.3);
+
+               cursor: pointer;
+
+                transition: all 150ms ease-out;
+            }
+
+                .cardContainer .card:hover{
+                    transform: scale(1.02);
+                }
+
+                .cardContainer .card .card-title{
+                    margin-bottom: 3px;
+                    
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                
+                .cardContainer .card .TXTpage{
+                    font-size: .9rem;
+                    line-height: 21px;
+                }
+
+                    .cardContainer .card:hover .card-title{
+                        color: var(--YLrosa);
+                        font-weight: 700;
+                        text-decoration: underline;
+                    }
+
+                    .cardContainer .card:active .card-title{
+                        color: var(--YLamarelo);
+                    }
+
+        div.buttonArea{
+            margin-top: 75px;
+        }
+
+            div.buttonArea .trailButton{
+                background-color: var(--YLroxo);
+                padding: 15px 50px;
+
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+                color: var(--branco);
+                font-size: 1.1rem;
+
+                transition: all 200ms ease-out;
+            }
+
+            div.buttonArea .trailButton:hover{
+                background-color: var(--YLrosa);
+
+                font-weight: 500;
+
+                transform: scale(1.05);
+            }
+
+            div.buttonArea .trailButton:active{
+                background-color: var(--YLamarelo);
+            }
+
+
+
+
+@media (max-width: 1200px){
+
+        #schiavon .schiavon-image img{
+            margin-left: 0;
+            height: 97%;
+        }
+
+        #schiavon .schiavon-text{
+            padding: 20px 100px 20px 20px;
+        }
+
+        #schiavon .schiavon-text *{
             color: var(--branco);
         }
+
+}
+
+@media (max-width: 1000px){
+
+        #schiavon{
+            background-color: rgba(0, 0, 0 , 0.2);
+            background-blend-mode: color;
+        }
+
+            #schiavon .schiavon-image img{
+                mix-blend-mode: multiply;
+                filter: saturate(0%);
+                opacity: 50%;
+            }
+
+            #schiavon .schiavon-text{
+                padding: 20px 0px 20px 20px;
+            }
+
+            #schiavon .schiavon-text *{
+                color: var(--branco);
+            }
+
+        div.cardContainer{
+            max-width: 450px;
+        }
+
+}
+
+@media (max-width: 800px){
+    
+    div.cardContainer{
+        max-width: 400px;
+        margin: 40px auto;
+    }
+
+        .cardContainer .col-lg-4{
+            padding: 7px;
+        }
+
+            .cardContainer .card .card-title{
+                font-size: 1.05rem;
+            }
+            
+            .cardContainer .card .TXTpage{
+                font-size: .87rem;
+                line-height: 20px;
+            }
+
+
+    
+    div.buttonArea{
+        margin-top: 70px;
+    }
+
+        div.buttonArea .trailButton{
+            padding: 10px 40px;
+
+            font-size: .9rem;
+        }
+}
+
+
+@media (max-width: 550px){
+
+        header#homepageHeader h1{
+            margin-bottom: -10px;
+            
+            font-size: 3.3rem;
+        }
+
+        header#homepageHeader h2{
+            font-size: .9rem;
+        }
+
+
+    table.table-borderless{
+        margin: 25px auto;
+    }   
+
+        .table-borderless .TXTpage{
+            font-size: .73rem;
+        }
+
+
+        #schiavon .schiavon-image img{
+            display: none;
+        }
+        
+        #schiavon .schiavon-text{
+            padding: 30px 25px;
+
+            z-index: 1;
+        }
+
+
+
+
+        div.cardContainer{
+            max-width: 350px;
+            margin: 30px auto;
+        }
+
+            .cardContainer .col-lg-4{
+                padding: 7px;
+            }
+
+                .cardContainer .card .card-title{
+                    margin-bottom: 5px;
+                    
+                    font-size: .95rem;
+                    font-weight: 500;
+                }
+                
+                .cardContainer .card .TXTpage{
+                    font-size: .73rem;
+                    line-height: 18px;
+                }
+
+
+
+        div.buttonArea{
+            margin-top: 30px;
+        }
+
+            div.buttonArea .trailButton{
+                padding: 7px 30px;
+
+                font-size: .75rem;
+            }
+
+}

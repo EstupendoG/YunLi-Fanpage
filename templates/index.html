@@ -2,112 +2,230 @@
 
 {% block pageCss %} 
 <link rel="stylesheet" href="{{url_for('static' , filename='css/homepage.css')}}">
+
 {% endblock %}
 
 {% block pageTitle %} Homepage {% endblock %}
 
 {% block pageContent %} 
 
-    <section class="allScreen d-flex justify-content-center align-items-center" id="header">
-            <h1 class="pageTitles TITLEfont">
-                YUNLI
-            </h1>
-            <h2 class="pageTitles">
-                E as três faces de uma só Arte
+    <header class="pageHeader d-flex justify-content-center align-items-center" id="homepageHeader">
+        <h1 class="headerTitle TITLEpage">
+            YUNLI
+        </h1>
+        <h2 class="headerTitle">
+            E as três faces de uma só Arte
+        </h2>
+    </header>
+
+    <section class="container-fluid contentSection">
+        <div class="container-md">
+            <h2 class="TITLEpage">
+                Introdução
             </h2>
+            <p class="TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus eius dignissimos ullam enim! Laboriosam ipsum sapiente, repudiandae dolorum, earum excepturi quasi animi dolores dolore sequi exercitationem maxime tempore qui aliquid rem magni atque asperiores? Odio rem praesentium quisquam unde voluptate, nihil eos in officiis, optio nisi quas dolores quia?</p>
+            <p class="TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio nihil vel, at reprehenderit atque doloribus fugiat! Quos possimus asperiores quam velit quasi corporis optio porro voluptates ipsam, iure nisi consequuntur debitis dolorem id fuga vitae dicta qui placeat unde!</p>
+
+            <table class="table table-borderless table-hover container-sm">
+                <thead>
+                    <tr class="TXTpage">
+                        <th scope="col"></th>
+                        <th scope="col">Nome da Música</th>
+                        <th scope="col">Reproduções</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TXTpage">
+                        <th scope="row">1</th>
+                        <td>Tomodachi</td>
+                        <td>10.436.529</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">2</th>
+                        <td>Polaroid</td>
+                        <td>10.100.479</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">3</th>
+                        <td>Phonesex</td>
+                        <td>6.643.500</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">4</th>
+                        <td>Sakura</td>
+                        <td>5.792.032</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">5</th>
+                        <td>Desgraça</td>
+                        <td>5.417.339</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">6</th>
+                        <td>Da Vinci Code</td>
+                        <td>4.905.670</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">7</th>
+                        <td>Quinto Elemento</td>
+                        <td>4.891.300</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">8</th>
+                        <td>Porsche Panamera</td>
+                        <td>4.824.063</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">9</th>
+                        <td>Ratatouille</td>
+                        <td>3.708.461</td>
+                    </tr>
+                    <tr class="TXTpage">
+                        <th scope="row">10</th>
+                        <td>Mentos Fresh</td>
+                        <td>3.699.606</td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+
+            <p class="TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio nihil vel, at reprehenderit atque doloribus fugiat! Quos possimus asperiores quam velit quasi corporis optio porro voluptates ipsam, iure nisi consequuntur debitis dolorem id fuga vitae dicta qui placeat unde!</p>
+            <p class="TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at facere alias voluptate saepe voluptatum ipsa culpa tempora quisquam beatae.</p>
+
+        </div>
     </section>
 
-    <section class="allScreen container-xxl" id="introduction">
-        <h3 class="section-title TITLEfont">
-            Introdução
-        </h3>
-
-        <p class="section-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maxime vero a adipisci beatae excepturi ipsum, placeat enim, odio eligendi nesciunt ut repudiandae atque alias minus voluptatem! Ratione, voluptatum maiores.
-        </p>
-
-        <p class="section-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatem illum ratione distinctio? Totam commodi consequatur repudiandae sequi vero. Consectetur aliquid reiciendis vero aperiam, consequuntur accusantium impedit mollitia alias obcaecati unde eaque nobis debitis quo explicabo! Totam nihil quam aspernatur?
-        </p>
-
-        <p class="section-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tempore! Iure quod, aspernatur voluptatibus sunt dolore praesentium nemo enim dolores quibusdam repudiandae sint ad nam rerum quis facilis dicta reiciendis accusamus! Maxime veniam atque dignissimos tempora aliquid vel iure adipisci expedita qui. Alias ratione odit provident consectetur magni quo quisquam!
-        </p>
-    </section>
-
-    <section class="allScreen container-xxl" id="schiavon">
-        <div class="row">
-            <div class="col">
-                <img class="schiavon-bodyPhoto" src="{{url_for('static' , filename='img/YL-body0.png')}}" alt="">
-            </div>
-
-            <div class="col-7">
-                <h3 class="section-title TITLEfont">
-                    Quem é Victor?
-                </h3>
-
-                <p class="section-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto corporis quae deserunt quisquam ut nesciunt magni velit nostrum ducimus. Ipsum amet fugiat nam, rem natus error cupiditate necessitatibus eveniet.
-                </p>
-
-                <p class="section-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat ratione unde quaerat iure debitis voluptates animi nobis eum, ipsam facilis corporis quas aperiam reiciendis necessitatibus eaque velit non accusamus dignissimos sed, laborum doloremque nulla error repellendus? Magni neque iure maiores delectus quidem!
-                </p>
+    <section class="container-fluid" id="schiavon">
+        <div class="container-md">
+            <div class="row schiavon-content">
+                <div class="col-5 schiavon-image">
+                    <img src="{{url_for('static' , filename='img/YL-body0.png')}}" alt="">
+                </div>
+                <div class="col-lg-7 schiavon-text">
+                    <h2 class="TITLEpage">
+                        Quem é Vicotr?
+                    </h2>
+                    <p class="TXTpage">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit aspernatur facere animi expedita voluptatibus quo numquam maxime at? Veniam est ex reiciendis similique facere eius ut eos eligendi non aut.</p>
+                    <p class="TXTpage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci deleniti temporibus accusantium! Aliquid ratione ex illum optio molestias tempore hic.</p>
+                    <p class="TXTpage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci deleniti temporibus accusantium! Aliquid ratione ex illum optio molestias tempore hic.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="allScreen container-xxl">
-        <h3 class="section-title TITLEfont">
-            Alter Egos
-        </h3>
-        
-        <p class="section-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto corporis quae deserunt quisquam ut nesciunt magni velit nostrum ducimus. Ipsum amet fugiat nam, rem natus error cupiditate necessitatibus eveniet.
-        </p>
     
-        <div class="row">
+    <section class="container-fluid contentSection">
 
-            <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title TITLEfont">MC VV</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="container-md">
+
+            <h2 class="TITLEpage">
+                Alter Egos
+            </h2>
+
+            <p class="TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio nihil vel, at reprehenderit atque doloribus fugiat! Quos possimus asperiores quam velit quasi corporis optio porro voluptates ipsam, iure nisi consequuntur debitis dolorem id fuga vitae dicta qui placeat unde!</p>
+            <p class="TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio nihil vel, at reprehenderit atque doloribus fugiat! Quos possimus asperiores quam velit quasi corporis optio porro voluptates ipsam, iure nisi consequuntur debitis dolorem id fuga vitae dicta qui placeat unde!</p>
+
+            <div class="row cardContainer">
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="{{url_for('static' , filename='img/bonda3.png')}}" class="card-img-top cardImage" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">MC VV</h5>
+                            <p class="card-text TXTpage">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, incidunt.</p>
+                        </div>
+
+                        <!-- <ul class="list-group list-group-flush">
+                            <li class="list-group-item lastAlbum">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="../static/img/validation.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="TXTpage">
+                                            Último Álbum
+                                        </h5>
+                                        <p class="TXTpage">
+                                            taammama
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> -->
                     </div>
-                        
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                    </ul>
                 </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="{{url_for('static' , filename='img/validation.png')}}" class="card-img-top cardImage" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">YunLi</h5>
+                            <p class="card-text TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptatum.</p>
+                        </div>
+
+                        
+                        <!-- <ul class="list-group list-group-flush">
+                            <li class="list-group-item lastAlbum">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="../static/img/validation.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="TXTpage">
+                                            Último Álbum
+                                        </h5>
+                                        <p class="TXTpage">
+                                            taammama
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="{{url_for('static' , filename='img/hitabump.png')}}" class="card-img-top cardImage" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo Marui</h5>
+                            <p class="card-text TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, doloribus.</p>
+                        </div>
+
+                        
+                        <!-- <ul class="list-group list-group-flush">
+                            <li class="list-group-item lastAlbum">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="../static/img/validation.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="TXTpage">
+                                            Último Álbum
+                                        </h5>
+                                        <p class="TXTpage">
+                                            taammama
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+                
             </div>
 
-            <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title TITLEfont">YunLi</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                        
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                    </ul>
-                </div>
-            </div>
+            <p class="TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio nihil vel, at reprehenderit atque doloribus fugiat! Quos possimus asperiores quam velit quasi corporis optio porro voluptates ipsam, iure nisi consequuntur debitis dolorem id fuga vitae dicta qui placeat unde!</p>
 
-            <div class="col">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title TITLEfont">TokyoMarui</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                        
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                    </ul>
-                </div>
+            <p class="TXTpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio nihil vel, at reprehenderit atque doloribus fugiat! Quos possimus asperiores quam velit quasi corporis optio porro voluptates ipsam, iure nisi consequuntur debitis dolorem id fuga vitae dicta qui placeat unde!</p>
+        
+            <div class="container d-flex justify-content-center buttonArea">
+                <a href="" class="btn trailButton">
+                    Começar a Ler <i class="bi bi-play"></i>
+                </a>
             </div>
 
         </div>
